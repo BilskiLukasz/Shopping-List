@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>MDB Webpack Starter</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/check-list.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    />
+    <!-- Main css file -->
+    <link rel="stylesheet" href="css/index.min.css" />
+
+  </head>
+
+  <body>
+    <div class="d-flex py-4 justify-content-center vh-100">
+      <div class="d-flex flex-column flex-lg-row bg-light w-75 h-100 rounded-lg">
+        <div id="menu" class="p-2 rounded border border-dark">
+          
+          <form id="form" class="d-flex flex-column justify-content-center" autocomplete="off">
+            <input 
+              class="m-1 mb-2 p-1 text-center rounded border"
+              type="text" 
+              name="productName" 
+              placeholder="Wpisz nazwę produktu"
+              required
+            >
+
+              <select 
+                class="m-1 mb-2 p-1 text-center rounded border"
+                id="categoryName"
+                required>
+                <option disabled selected>Wybierz kategorię</option>
+              </select>
+
+  
+              <div 
+                class="d-flex justify-content-center p-2">
+  
+                <div class="form-check m-1">
+                  <input class="form-check-input" type="radio" name="unit" id="szt." value="szt." checked>
+                  <label class="form-check-label" for="szt.">szt.</label>
+                </div>
+  
+                <div class="form-check m-1">
+                  <input class="form-check-input" type="radio" name="unit" id="lit." value="lit.">
+                  <label class="form-check-label" for="lit.">lit.</label>
+                </div>
+  
+                <div class="form-check m-1">
+                  <input class="form-check-input" type="radio" name="unit" id="kg." value="kg.">
+                  <label class="form-check-label" for="kg.">kg.</label>
+                </div>
+  
+              </div>
+            
+            <input 
+              class="text-center m-1 mb-2 p-1 rounded border" 
+              type="number" 
+              name="amount"
+              min="1"
+              required>
+
+            <button
+              class="btn btn-primary m-1"
+              type="submit">
+              dodaj produkt
+            </button>
+
+          </form>
+        </div>
+        <div id="list" class="flex-grow-1 overflow-auto p-2 rounded border border-dark">
+          
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+  <!-- Main js file -->
+  <script type="text/javascript" src="js/index.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript"></script>
+
+</html>
